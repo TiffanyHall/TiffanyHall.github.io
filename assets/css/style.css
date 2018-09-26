@@ -1,19 +1,19 @@
 body {
-   background-image:url("../images/oriental/oriental.png") 
-  
+   background-image:url("../images/oriental/oriental.png");
+   margin: 0; 
+   
 }
+
 
 .navbar {
     background-color: rgb(97, 2, 49);
     overflow: hidden;
-    padding: 0;
-    margin: 0;
     font-size: 18px;
     height: 75px;
 }
 
-.navbar .size {
-    width: 1400px;
+.stage {
+    width: 100%;
 }
 
 .navbar .title {
@@ -23,63 +23,41 @@ body {
     height: 100px;
     width: 200px;
     color: rgb(97, 2, 49); 
-    margin-left: 400px; 
+    margin-left: 20%; 
     text-align: center;
 }
 
 .navbar a {
    
-
     font-size: 20px;
     color: #f2f2f2a8;
     text-align: center;
-    padding: 25px 15px;
     text-decoration: none;
-    margin-right: 20px;
     padding-top: 50px;
 }
 
 .links {
+    margin-right: 23%;
     float: right; 
-}
-
-.nav-divider1 {
-    border-right:2px solid lightgray; 
-     height: 20px;
-     right: 265px;
-     top: 35px; 
-    position: absolute;
-     
-}
-
-.nav-divider2 {
-    border-right: 2px solid lightgray; 
-     height: 20px;
-     right: 145px;
-     top: 35px; 
-     position: absolute;
-     
-     
+    height: 80px;
+    padding-top: 25px;
 }
 
 .navbar a.active {
-    background-color: lightgray;
-    color: black;
-    height: 75px;
+font-weight: bold;
+color: #ffffff;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    height: 75px;
-}
+    text-decoration: underline;
+    font-weight: bold;}
 
 .container {
     background-color: rgb(224, 223, 223);
     width: 960px;
     height: 640px;
     border: 1px solid #004c66;
-    margin: 20px 80px 20px 400px;
+    margin: 0 auto;
     position: relative;
     
 }
@@ -154,7 +132,7 @@ footer {
     width: 100%;
     height: 50px;
     background-color:   #004c66;
-    border-top: 10px solid rgb(20, 156, 2);
+    border-top: 10px solid #000000;
 
 }
 
@@ -168,3 +146,181 @@ footer {
     width: 100%;
 }
 
+/* On screens that are 768px or less */
+@media screen and (max-width: 768px) {
+   
+    .container {
+        width: 99%;
+        height: auto;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    input.input {
+        width: 90%;
+    }
+
+}
+
+/* On screens that are 640px or less */
+
+@media screen and (max-width: 640px) {
+
+.container {
+     width: 99%;
+     height: auto;
+ }   
+    
+.navbar .title {
+    margin-left: 0%;
+    width: 100%;
+    height: 60%;
+}
+
+section.navbar {
+    height: 100px;
+}
+
+.links {
+    height: 40%;
+    padding-top: 2%;
+    float: none;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+hr {
+    width: auto;
+}
+
+
+img.profile {
+    float: none;
+    padding: 0px;
+    display: inline-block;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 5% 10%;
+}
+
+input#submit {
+    margin-bottom: 10px;
+}
+
+.image {
+        float: none;
+        margin: 5% auto;
+        width: 200px;
+}
+
+section.content {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+}
+
+/* On screens that are 768px or less */
+@media screen and (max-width: 768px) and (min-width: 641px)  {
+
+section.navbar {
+    width: 100%;
+
+}
+
+hr {
+    width: auto;
+}
+
+
+.container {
+    width: 99%;
+    height:auto;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.navbar .title {
+    margin-left: 0;    
+
+}
+
+.links {
+    margin-right: 5%;
+}
+
+section.content {
+    padding-top: 0;
+    padding-left: 0px;
+    padding-right: 3px;
+}
+
+img.profile {
+    padding-top: 16px;
+    padding-left: 25px;
+}
+
+p.copy {
+    padding-bottom: 20px;
+}
+
+input.input {
+    margin-left: 15px;
+}
+
+p {
+    margin-left: 15px;
+}
+
+input#submit {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    
+}
+    section.navbar {
+        width: 100%;
+    
+    }
+
+}
+
+/* On screens that are 980px or less */
+@media screen and (max-width: 980px) and (min-width: 769px)  {
+
+    .container {
+        width: 99%;
+    }
+
+    hr {
+        width: auto;
+    }
+
+    .navbar .title {
+
+        margin-left: 2%;
+    }    
+        
+    .links {
+            margin-right: 2%;
+    }    
+
+    input.input {
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+    input#submit {
+    margin-left: 2%;
+}
+
+
+}
